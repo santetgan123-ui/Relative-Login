@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Relative Roleplay | Official Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center relative">
+    <div class="glow-bg"></div>
+
+    <!-- Header Section -->
+    <div class="text-center fade-up">
+        <div class="relative inline-block mb-8">
+            <div class="absolute -inset-4 bg-cyan-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+            <img src="logo.png" class="h-48 relative drop-shadow-2xl">
+        </div>
+        
+        <h1 class="text-7xl font-extrabold tracking-tighter mb-4">
+            RELATIVE <span class="text-cyan-400">RP</span>
+        </h1>
+        <p class="text-slate-400 text-lg max-w-lg mx-auto mb-10 leading-relaxed font-medium">
+            Jelajahi dunia tanpa batas di server Roleplay terbaik. 
+            Kelola karaktermu melalui dashboard terintegrasi kami.
+        </p>
+
+        <div class="flex gap-6 justify-center">
+            <a href="login.html" class="btn-primary px-10 py-4 rounded-2xl">LOGIN DASHBOARD</a>
+            <a href="register.html" class="glass px-10 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-colors">DAFTAR AKUN</a>
+        </div>
+    </div>
+
+    <!-- Dock Social -->
+    <div class="fixed bottom-10 right-10 flex flex-col gap-4">
+        <a href="https://discord.gg/relativerp" class="float-icon bg-[#5865F2] shadow-xl"><i data-lucide="message-circle" class="text-white"></i></a>
+        <a href="https://instagram.com/relative.samp" class="float-icon bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 shadow-xl"><i data-lucide="instagram" class="text-white"></i></a>
+        <button onclick="toggleAudio()" class="float-icon bg-cyan-600 shadow-xl animate-pulse"><i data-lucide="music" class="text-white"></i></button>
+    </div>
+
+    <audio id="bg-music" loop><source src="music.mp3" type="audio/mp3"></audio>
+    <script src="enginerrp.js"></script>
+</body>
+</html>

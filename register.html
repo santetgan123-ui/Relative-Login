@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Relative RP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+    <div class="glow-bg"></div>
+    
+    <div id="reg-box" class="glass p-10 rounded-3xl w-full max-w-lg fade-up">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-black text-white uppercase tracking-widest">Create Identity</h2>
+            <p class="text-slate-500 text-xs mt-2 uppercase tracking-tighter">Pastikan data sesuai dengan akun discord anda</p>
+        </div>
+
+        <form id="registerForm" class="space-y-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-1">
+                    <label class="text-[10px] font-bold text-cyan-500 ml-2 uppercase">UCP Name</label>
+                    <input type="text" name="ucp_name" placeholder="Contoh: Budi_Samsudin" class="w-full p-4 rounded-2xl outline-none" required>
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[10px] font-bold text-cyan-500 ml-2 uppercase">Discord ID</label>
+                    <input type="text" name="discordid" placeholder="1234567890" class="w-full p-4 rounded-2xl outline-none" required>
+                </div>
+            </div>
+
+            <div class="space-y-1">
+                <label class="text-[10px] font-bold text-cyan-500 ml-2 uppercase">Email Aktif (Untuk PIN)</label>
+                <input type="email" name="email" placeholder="nama@gmail.com" class="w-full p-4 rounded-2xl outline-none" required>
+            </div>
+
+            <div class="space-y-1">
+                <label class="text-[10px] font-bold text-cyan-500 ml-2 uppercase">Password</label>
+                <input type="password" name="password" placeholder="••••••••" class="w-full p-4 rounded-2xl outline-none" required>
+            </div>
+            
+            <div class="p-4 bg-yellow-500/5 border border-yellow-500/20 rounded-xl">
+                <p class="text-[10px] text-slate-400 text-center leading-relaxed">
+                    <span class="text-yellow-500 font-bold">INFO:</span> PIN Karakter akan dikirimkan ke alamat email di atas setelah pendaftaran berhasil dikonfirmasi.
+                </p>
+            </div>
+
+            <button type="submit" id="btnSubmit" class="btn-primary w-full py-4 rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-2">
+                <span>Daftar Akun</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+        </form>
+
+        <div class="mt-6 text-center">
+            <a href="login.html" class="text-sm text-slate-500 hover:text-cyan-400 transition-colors">Sudah punya akun? Login</a>
+        </div>
+    </div>
+
+    <script src="enginerrp.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

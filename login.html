@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Relative RP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+    <div class="glow-bg"></div>
+    
+    <div class="glass p-10 rounded-3xl w-full max-w-md fade-up">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-black text-white uppercase tracking-widest">Welcome Back</h2>
+            <p class="text-slate-500 text-sm mt-2">Masukan akses UCP untuk melanjutkan</p>
+        </div>
+
+        <form id="loginForm" class="space-y-6">
+            <div>
+                <label class="text-xs font-bold text-cyan-400 uppercase tracking-widest ml-1">UCP Name</label>
+                <input type="text" name="ucp_name" class="w-full p-4 rounded-2xl mt-2 outline-none" placeholder="Username" required>
+            </div>
+            <div>
+                <label class="text-xs font-bold text-cyan-400 uppercase tracking-widest ml-1">Password</label>
+                <input type="password" name="password" class="w-full p-4 rounded-2xl mt-2 outline-none" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest">Sign In</button>
+        </form>
+
+        <div class="mt-8 text-center text-sm text-slate-500">
+            Baru di kota ini? <a href="register.html" class="text-cyan-400 font-bold hover:underline">Daftar Akun</a>
+        </div>
+    </div>
+    <script src="enginerrp.js"></script>
+</body>
+</html>
